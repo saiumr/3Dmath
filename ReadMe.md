@@ -69,11 +69,7 @@ $\vec v_{norm}=\dfrac{\vec v}{||\vec v||}$
 两个**维数相同**的向量可以相加/相减：各分量相加减  
 
 $$
-\begin{bmatrix} x_1 \\ y_1 \\ z_1 \end{bmatrix}
-+
-\begin{bmatrix} x_2 \\ y_2 \\ z_2 \end{bmatrix}
-=
-\begin{bmatrix} x_1+x_2 \\ y_1+y_2 \\ z_1+z_2\end{bmatrix}
+\begin{bmatrix} x_1 \\ y_1 \\ z_1 \end{bmatrix}+\begin{bmatrix} x_2 \\ y_2 \\ z_2 \end{bmatrix}=\begin{bmatrix} x_1+x_2 \\ y_1+y_2 \\ z_1+z_2\end{bmatrix}
 $$  
 
 向量相减解释为一个向量加上另一个向量的负向量：
@@ -97,15 +93,7 @@ $(\vec a, \vec b)=||\vec b-\vec a||=\sqrt{(b_x-a_x)^2+(b_y-a_y)^2+(b_z-a_z)^2}$
 **向量点乘**：对应分量乘积的和，结果是一个标量，点乘满足交换律  
 
 $$
-\vec a\cdot\vec b
-=
-\begin{bmatrix} a_1 \\ a_2 \\ a_3 \end{bmatrix}
-\cdot
-\begin{bmatrix} b_1 \\ b_2 \\ b_3 \end{bmatrix}
-=
-\begin{bmatrix} a_1b_1 \\ a_2b_2 \\ a_3b_3 \end{bmatrix} 
-=
-\sum\limits_{i=1}^{n}a_ib_i
+\vec a\cdot\vec b=\begin{bmatrix} a_1 \\ a_2 \\ a_3 \end{bmatrix}\cdot\begin{bmatrix} b_1 \\ b_2 \\ b_3 \end{bmatrix}=\begin{bmatrix} a_1b_1 \\ a_2b_2 \\ a_3b_3 \end{bmatrix} =\sum\limits_{i=1}^{n}a_ib_i
 $$  
 
 点乘描述了两个向量的**相似程度**，点乘结果越大，向量越相近  
@@ -126,12 +114,9 @@ $\vec v_\perp=\vec v-\vec v_\parallel=\vec v-\vec n\dfrac{\vec v·\vec n}{||\vec
 **向量叉乘：**
 
 $$
-\begin{bmatrix} x_1 \\ y_1 \\ z_1 \end{bmatrix}
-\times
-\begin{bmatrix} x_2 \\ y_2 \\ z_2 \end{bmatrix}
-=
-\begin{bmatrix} y_1z_2-z_1y_2 \\ z_1x_2-x_1z_2 \\ x_1y_2-y_1x_2 \end{bmatrix}
+\begin{bmatrix} x_1 \\ y_1 \\ z_1 \end{bmatrix}\times\begin{bmatrix} x_2 \\ y_2 \\ z_2 \end{bmatrix}=\begin{bmatrix} y_1z_2-z_1y_2 \\ z_1x_2-x_1z_2 \\ x_1y_2-y_1x_2 \end{bmatrix}
 $$  
+
 它的结果是一个向量，它垂直于原来的两个向量  
 
 叉乘不满足交换律，满足反交换律：
