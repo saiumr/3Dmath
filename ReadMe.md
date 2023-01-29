@@ -52,10 +52,10 @@ $\vec v+(-\vec v)=0$
 **向量的模**：
 $||\vec v||=\sqrt{v_1^2+v_2^2+...+v_{n-1}^2+v_n^2}$  
 
-**标量与向量可以相乘**：
+**标量与向量可以相乘**：  
 $k\begin{bmatrix} x \\ y \\ z \end{bmatrix}=\begin{bmatrix} x \\ y \\ z
-\end{bmatrix}k=\begin{bmatrix} kx \\ ky \\ kz \end{bmatrix}$
-，几何意义上标量与向量相乘是对向量进行缩放以及翻转操作，拉伸、缩短、反转方向（各分量取负值）  
+\end{bmatrix}k=\begin{bmatrix} kx \\ ky \\ kz \end{bmatrix}$  
+几何意义上标量与向量相乘是对向量进行缩放以及翻转操作，拉伸、缩短、反转方向（各分量取负值）  
 
 **标准化向量**：很多时候我们只关心向量的方向而不在乎其大小，那么使用**单位向量**更加方便，单位向量就是大小为1的向量，它也经常被简单的称为**标准化向量**或更简单地称为**法线**  
 
@@ -64,6 +64,7 @@ $\vec v_{norm}=\dfrac{\vec v}{||\vec v||}$
 
 两个**维数相同**的向量可以相加/相减：各分量相加减  
 $\begin{bmatrix} x_1 \\ y_1 \\ z_1 \end{bmatrix}+\begin{bmatrix} x_2 \\ y_2 \\ z_2 \end{bmatrix}=\begin{bmatrix} x_1+x_2 \\ y_1+y_2 \\ z_1+z_2\end{bmatrix}$  
+$\begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}$  
 向量相减解释为一个向量加上另一个向量的负向量：
 $\vec v_1-\vec v_2=\vec v_1+(-\vec v_2)$  
 向量加法满足交换律，减法不满足交换律，因为
