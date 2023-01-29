@@ -55,7 +55,12 @@ $||\vec v||=\sqrt{v_1^2+v_2^2+...+v_{n-1}^2+v_n^2}$
 **标量与向量可以相乘**：  
 
 $$
-k\begin{bmatrix}x\\y\\z\end{bmatrix}=\begin{bmatrix} x \\ y \\ z
+k\begin{bmatrix}
+  x \\
+  y \\
+  z
+\end{bmatrix}=
+\begin{bmatrix} x \\ y \\ z
 \end{bmatrix}k=\begin{bmatrix} kx \\ ky \\ kz \end{bmatrix}
 $$  
 
