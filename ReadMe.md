@@ -46,7 +46,8 @@
 ## 向量运算  
 
 **负向量(各分量取负)**：
-$\vec v+(-\vec v)=0$，几何上表示与原点的连线方向相反  
+$\vec v+(-\vec v)=0$
+，几何上表示与原点的连线方向相反  
 
 **向量的模**：
 $||\vec v||=\sqrt{v_1^2+v_2^2+...+v_{n-1}^2+v_n^2}$  
@@ -66,7 +67,8 @@ $k\left[ \begin{matrix}
   kx \\
   ky \\
   kz
-\end{matrix} \right]$，几何意义上标量与向量相乘是对向量进行缩放以及翻转操作，拉伸、缩短、反转方向（各分量取负值）  
+\end{matrix} \right]$
+，几何意义上标量与向量相乘是对向量进行缩放以及翻转操作，拉伸、缩短、反转方向（各分量取负值）  
 
 **标准化向量**：很多时候我们只关心向量的方向而不在乎其大小，那么使用**单位向量**更加方便，单位向量就是大小为1的向量，它也经常被简单的称为**标准化向量**或更简单地称为**法线**  
 
@@ -74,24 +76,12 @@ $k\left[ \begin{matrix}
 $\vec v_{norm}=\dfrac{\vec v}{||\vec v||}$  
 
 两个**维数相同**的向量可以相加/相减：各分量相加减  
-$\left[ \begin{matrix}
-  x_1 \\
-  y_1 \\
-  z_1
-\end{matrix} \right]+
-\left[ \begin{matrix}
-  x_2 \\
-  y_2 \\
-  z_2
-\end{matrix} \right]=
-\left[ \begin{matrix}
-  x_1+x_2 \\
-  y_1+y_2 \\
-  z_1+z_2
-\end{matrix} \right]$  
+$\left[ \begin{matrix} x_1 \\ y_1 \\ z_1 \end{matrix} \right]+\left[ \begin{matrix} x_2 \\ y_2 \\ z_2 \end{matrix} \right]= \left[ \begin{matrix} x_1+x_2 \\ y_1+y_2 \\ z_1+z_2\end{matrix} \right]$  
 向量相减解释为一个向量加上另一个向量的负向量：
 $\vec v_1-\vec v_2=\vec v_1+(-\vec v_2)$  
-向量加法满足交换律，减法不满足交换律，因为$\vec a-\vec b=-(\vec b-\vec a)$这两个向量的方向是相反的  
+向量加法满足交换律，减法不满足交换律，因为
+$\vec a-\vec b=-(\vec b-\vec a)$
+这两个向量的方向是相反的  
 
 向量加减法的三角形法则：
 $\vec a+\vec b=\vec b+\vec a$
@@ -106,21 +96,7 @@ $a-b$
 $(\vec a, \vec b)=||\vec b-\vec a||=\sqrt{(b_x-a_x)^2+(b_y-a_y)^2+(b_z-a_z)^2}$  
 
 **向量点乘**：对应分量乘积的和，结果是一个标量，点乘满足交换律  
-$\left[ \begin{matrix}
-  a_1 \\
-  a_2 \\
-  a_3
-\end{matrix} \right]
-\left[ \begin{matrix}
-  b_1 \\
-  b_2 \\
-  b_3
-\end{matrix} \right]=
-\left[ \begin{matrix}
-  a_1b_1 \\
-  a_2b_2 \\
-  a_3b_3
-\end{matrix} \right]$
+$\left[ \begin{matrix}a_1 \\ a_2 \\ a_3 \end{matrix} \right] \left[ \begin{matrix} b_1 \\ b_2 \\ b_3 \end{matrix} \right]= \left[ \begin{matrix} a_1b_1 \\ a_2b_2 \\ a_3b_3 \end{matrix} \right]$
 ==>
 $\vec a·\vec b=\sum\limits_{i=1}^{n}a_ib_i$  
 
@@ -133,36 +109,23 @@ $\theta=\arccos{(\dfrac{\vec a·\vec b}{||\vec a||*||\vec b||})}$
 根据点乘结果也可以大致判断向量的方向  
 ![点乘结果大致判断方位](./assets/images/5-10-2点乘结果大致判断.png)  
 
-**向量投影**：给定两个向量$\vec v$和$\vec n$，能将$\vec v$分解成两个分量$\vec v_\parallel$和$\vec v_\perp$，他俩一个平行于$\vec n$，一个垂直于$\vec n$，一般称平行分量$\vec v_\parallel$为$\vec v$在$\vec n$上的投影  
-根据上面的点乘公式可以求出：$\vec v_\parallel=\vec n\dfrac{\vec v·\vec n}{||\vec n||^2}$  
-根据公式 $\vec v_\parallel+\vec v_\perp=\vec v$，可知：$\vec v_\perp=\vec v-\vec v_\parallel=\vec v-\vec n\dfrac{\vec v·\vec n}{||\vec n||^2}$  
+**向量投影**：给定两个向量 $\vec v$ 和 $\vec n$ ，能将 $\vec v$ 分解成两个分量 $\vec v_\parallel$ 和 $\vec v_\perp$，他俩一个平行于 $\vec n$，一个垂直于 $\vec n$，一般称平行分量 $\vec v_\parallel$ 为 $\vec v$ 在 $\vec n$ 上的投影  
+根据上面的点乘公式可以求出：
+$\vec v_\parallel=\vec n\dfrac{\vec v·\vec n}{||\vec n||^2}$  
+根据公式 $\vec v_\parallel+\vec v_\perp=\vec v$，可知：
+$\vec v_\perp=\vec v-\vec v_\parallel=\vec v-\vec n\dfrac{\vec v·\vec n}{||\vec n||^2}$  
 
 **向量叉乘：**
-$
-\left[ \begin{matrix}
-  x_1 \\
-  y_1 \\
-  z_1
-\end{matrix} \right]
-\times
-\left[ \begin{matrix}
-  x_2 \\
-  y_2 \\
-  z_2
-\end{matrix} \right]=
-\left[ \begin{matrix}
-  y_1z_2-z_1y_2 \\
-  z_1x_2-x_1z_2 \\
-  x_1y_2-y_1x_2
-\end{matrix} \right]
+$\left[ \begin{matrix} x_1 \\ y_1 \\ z_1 \end{matrix} \right]\times \left[ \begin{matrix} x_2 \\ y_2 \\ z_2 \end{matrix} \right]=\left[ \begin{matrix} y_1z_2-z_1y_2 \\ z_1x_2-x_1z_2 \\ x_1y_2-y_1x_2 \end{matrix} \right]
 $，结果是一个向量，它垂直于原来的两个向量  
-不满足交换律，满足反交换律：$\mathbf{a}\times\mathbf{b}=-(\mathbf{b}\times\mathbf{a})$，和点乘在一起运算时优先运算叉乘（三重积：
+不满足交换律，满足反交换律：
+$\mathbf{a}\times\mathbf{b}=-(\mathbf{b}\times\mathbf{a})$，和点乘在一起运算时优先运算叉乘（三重积：
 $\mathbf{a}\cdot\mathbf{b}\times\mathbf{c}$是个标量）  
 它的长度为：
 $||\mathbf{a}\times\mathbf{b}||=||\mathbf{a}||\ ||\mathbf{b}||\sin\theta$  
 叉乘的长度与向量夹角的sin值有关，这个长度也是a为边b为底的平行四边形的面积  
 叉乘得到的向量方向判断（计算机倒是不需要这样），将向量$\mathbf{a}\times\mathbf{b}$如下图相连  
-![叉乘结果方向](.\assets/images/5-10-6叉乘结果方向.png)  
+![叉乘结果方向](./assets/images/5-10-6叉乘结果方向.png)  
 在[左手坐标系](#笛卡尔坐标系统)中如果是顺时针方向，那么叉乘结果指向自己，如果是逆时针方向那么远离自己  
 在右手坐标系中则相反  
 
