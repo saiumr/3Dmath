@@ -76,7 +76,7 @@ $k\left[ \begin{matrix}
 $\vec v_{norm}=\dfrac{\vec v}{||\vec v||}$  
 
 两个**维数相同**的向量可以相加/相减：各分量相加减  
-$\left[ \begin{matrix} x_1 \\ y_1 \\ z_1 \end{matrix} \right]+\left[ \begin{matrix} x_2 \\ y_2 \\ z_2 \end{matrix} \right]= \left[ \begin{matrix} x_1+x_2 \\ y_1+y_2 \\ z_1+z_2\end{matrix} \right]$  
+$\left[\begin{matrix} x_1 \\ y_1 \\ z_1 \end{matrix} \right]+\left[ \begin{matrix} x_2 \\ y_2 \\ z_2 \end{matrix} \right]= \left[\begin{matrix} x_1+x_2 \\ y_1+y_2 \\ z_1+z_2\end{matrix} \right]$  
 向量相减解释为一个向量加上另一个向量的负向量：
 $\vec v_1-\vec v_2=\vec v_1+(-\vec v_2)$  
 向量加法满足交换律，减法不满足交换律，因为
@@ -96,11 +96,11 @@ $a-b$
 $(\vec a, \vec b)=||\vec b-\vec a||=\sqrt{(b_x-a_x)^2+(b_y-a_y)^2+(b_z-a_z)^2}$  
 
 **向量点乘**：对应分量乘积的和，结果是一个标量，点乘满足交换律  
-$\left[ \begin{matrix}a_1 \\ a_2 \\ a_3 \end{matrix} \right] \left[ \begin{matrix} b_1 \\ b_2 \\ b_3 \end{matrix} \right]= \left[ \begin{matrix} a_1b_1 \\ a_2b_2 \\ a_3b_3 \end{matrix} \right]$
+$\left[\begin{matrix} a_1 \\ a_2 \\ a_3 \end{matrix} \right] \left[\begin{matrix} b_1 \\ b_2 \\ b_3 \end{matrix} \right]= \left[ \begin{matrix} a_1b_1 \\ a_2b_2 \\ a_3b_3 \end{matrix} \right]$  
 ==>
 $\vec a·\vec b=\sum\limits_{i=1}^{n}a_ib_i$  
 
-点乘描述了两个向量的**“相似”程度**，点乘结果越大，向量越相近  
+点乘描述了两个向量的**相似程度**，点乘结果越大，向量越相近  
 点乘也等于向量大小和向量夹角cos的积：
 $\vec a·\vec b=||\vec a||*||\vec b||*cos\theta$  
 从中可以解出：
