@@ -48,22 +48,22 @@ public:
     return Vector3(a*x, a*y, a*z);
   }
 
-  Vector3 operator+=(const Vector3& v) {
+  Vector3& operator+=(const Vector3& v) {
     x += v.x; y += v.y; z += v.z;
     return *this;
   }
 
-  Vector3 operator-=(const Vector3& v) {
+  Vector3& operator-=(const Vector3& v) {
     x -= v.x; y -= v.y; z -= v.z;
     return *this;
   }
 
-  Vector3 operator*=(float k) {
+  Vector3& operator*=(float k) {
     x *= k; y *= k; z *= k;
     return *this;
   }
 
-  Vector3 operator/=(float k) {
+  Vector3& operator/=(float k) {
     assert(std::numeric_limits<float>::epsilon() < abs(k));
     float a = 1.0f/k;
     x *= a; y *= a; z *= a;
